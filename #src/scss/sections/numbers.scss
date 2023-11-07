@@ -1,0 +1,37 @@
+.numbers {
+  background-color: #c5ddf9;
+  padding: 40px 0 80px 0;
+  h2 {
+    color: #406da2;
+    margin-bottom: 30px;
+  }
+  & > div {
+    & > div {
+      display: grid;
+      grid-template-columns: 555px 555px 555px;
+      gap: 40px;
+      justify-content: space-between;
+      @media (max-width: 1768px) {
+        grid-template-columns: 1fr 1fr 1fr;
+      }
+      & > div {
+        border-radius: 10px;
+        background: white;
+        padding: 30px 25px 30px 70px;
+
+        span {
+          color: #373737;
+          font-size: 32px;
+          font-weight: 700;
+          line-height: 93%;
+        }
+        p {
+          margin-top: 10px;
+          font-size: 24px;
+          color: #373737;
+          line-height: 125%;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,65 @@
+.callback {
+  background-image: url("../img/bg-2.jpg");
+  padding-top: 96px;
+  background-position: center;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  &__form {
+    padding: 40px 246px 73px 246px;
+    border-radius: 10px;
+    background: white;
+    margin-bottom: -100px;
+    width: 975px;
+    h2 {
+      color: #373737;
+      font-size: 32px;
+      line-height: 40px;
+      text-align: center;
+      margin-bottom: 30px;
+      span {
+        font-weight: 700;
+      }
+    }
+    p {
+      color: #373737;
+      font-size: 28px;
+      line-height: 125%;
+      text-align: center;
+    }
+    form {
+      display: flex;
+      flex-direction: column;
+      gap: 30px;
+      padding-top: 30px;
+      input {
+        border-radius: 5px;
+        background: rgba(158, 171, 187, 0.3);
+        padding: 28px 11px;
+        font-size: 28px;
+        line-height: 125%;
+        &::placeholder {
+          color: #9eabbb;
+          font-size: 28px;
+          line-height: 125%;
+        }
+      }
+      p {
+        color: #9eabbb;
+        font-size: 16px;
+        line-height: 100%;
+        margin-top: -10px;
+      }
+      button {
+        font-size: 32px;
+        font-weight: 700;
+        line-height: 125%;
+        padding: 28px 0;
+        border-radius: 5px;
+        color: white;
+        background: #406da2;
+        box-shadow: 4px 4px 4px 0px rgba(34, 63, 97, 0.36);
+      }
+    }
+  }
+}
