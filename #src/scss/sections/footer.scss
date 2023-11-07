@@ -1,2 +1,38 @@
 .footer {
+  background-color: #9eabbb;
+  & > div {
+    &:first-child {
+      padding-top: 189px;
+      padding-bottom: 40px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      & > div {
+        display: flex;
+        gap: 10px;
+        & > div {
+          display: flex;
+          flex-direction: column;
+        }
+      }
+      h3 {
+        color: #406da2;
+        font-size: 32px;
+        font-weight: 700;
+        line-height: 125%;
+        margin-bottom: 30px;
+      }
+      p,
+      a {
+        color: white;
+        font-size: 28px;
+        line-height: 125%;
+      }
+    }
+    &:last-child {
+      height: 20px;
+      background-color: #406da2;
+    }
+  }
 }

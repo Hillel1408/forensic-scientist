@@ -1,0 +1,17 @@
+.about-us {
+  background-color: #c5ddf9;
+  padding-top: 60px;
+  padding-bottom: 70px;
+  h2 {
+    color: #406da2;
+    margin-bottom: 26px;
+  }
+  p {
+    color: #373737;
+    font-size: 24px;
+    line-height: 125%;
+    &:not(:last-child) {
+      margin-bottom: 20px;
+    }
+  }
+}

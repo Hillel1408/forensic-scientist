@@ -5,10 +5,32 @@
   overflow: hidden;
 }
 .container {
-  max-width: 1420px;
-  padding: 0 30px;
+  max-width: 2004px;
+  padding: 0 20px;
   margin: 0 auto;
+}
+.btn {
+  padding: 18px 24px;
+  border-radius: 5px;
+  background: #c5ddf9;
+  box-shadow: 4px 4px 4px 0px rgba(3, 57, 108, 0.31);
+  font-size: 24px;
+  color: #373737;
+  line-height: 91%;
+  transition: 0.3s;
+  &:hover {
+    color: white;
+    background: #406da2;
+  }
+}
+.title {
+  font-size: 32px;
+  font-weight: 700;
+  line-height: 125%;
+  text-align: center;
 }
 
 @import "./sections/header";
 @import "./sections/footer";
+@import "./sections/about-us";
+@import "./sections/advantages";
