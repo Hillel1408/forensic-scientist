@@ -1,16 +1,23 @@
 .callback {
-  background-image: url("../img/bg-2.jpg");
+  background-image: url("../img/bg-2.png");
   padding-top: 96px;
   background-position: center;
   background-size: cover;
   display: flex;
   justify-content: center;
   &__form {
-    padding: 40px 246px 73px 246px;
+    padding: 40px 236px 73px 236px;
     border-radius: 10px;
     background: white;
     margin-bottom: -100px;
     width: 975px;
+    position: relative;
+    &::before {
+      content: url("../img/bg-3.png");
+      position: absolute;
+      left: -495px;
+      bottom: 99px;
+    }
     h2 {
       color: #373737;
       font-size: 32px;
@@ -26,6 +33,10 @@
       font-size: 28px;
       line-height: 125%;
       text-align: center;
+      a {
+        color: #406da2;
+        font-weight: 700;
+      }
     }
     form {
       display: flex;
@@ -59,7 +70,22 @@
         color: white;
         background: #406da2;
         box-shadow: 4px 4px 4px 0px rgba(34, 63, 97, 0.36);
+        margin-bottom: 30px;
       }
+    }
+    & > button {
+      color: #373737;
+      font-size: 32px;
+      line-height: 125%;
+      display: flex;
+      align-items: center;
+      justify-content: flex-end;
+      padding-right: 20px;
+      border-radius: 5px;
+      background: #c5ddf9;
+      width: 100%;
+      box-shadow: 4px 4px 4px 0px rgba(64, 109, 162, 0.24);
+      margin-top: 29px;
     }
   }
 }
