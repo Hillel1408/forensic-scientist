@@ -1,0 +1,36 @@
+.education {
+  &-block-1 {
+    background-color: #c5ddf9;
+    padding: 50px 0 50px 0;
+    h2 {
+      color: #406da2;
+      text-transform: uppercase;
+    }
+  }
+  &-block-2 {
+    padding: 48px 0 0 0;
+    background-image: url("../img/bg-7.jpg");
+    background-size: cover;
+    & > div:last-child {
+      height: 20px;
+      background-color: #406da2;
+      margin-top: 120px;
+    }
+    ul {
+      color: #373737;
+      display: flex;
+      flex-direction: column;
+      max-width: 1086px;
+      gap: 30px;
+      li {
+        font-size: 24px;
+        line-height: 125%;
+        display: flex;
+        gap: 17px;
+        &:before {
+          content: url("../img/icon-16.svg");
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,124 @@
+.cooperation {
+  &-block-1 {
+    background-color: #c5ddf9;
+    padding: 80px 0 61px 0;
+    @media (max-width: 480px) {
+      padding: 30px 0 30px 0;
+    }
+    h2 {
+      color: #406da2;
+      margin-bottom: 30px;
+      text-transform: uppercase;
+      @media (max-width: 480px) {
+        margin-bottom: 20px;
+      }
+    }
+    p {
+      color: #373737;
+      font-size: 24px;
+      line-height: 125%;
+      @media (max-width: 480px) {
+        font-size: 14px;
+        line-height: 114%;
+        text-align: center;
+      }
+      &:not(:last-child) {
+        margin-bottom: 20px;
+      }
+    }
+  }
+  &-block-2 {
+    padding: 60px 0 0 0;
+    background-color: #9eabbb;
+    @media (max-width: 480px) {
+      padding: 30px 0 0px 0;
+    }
+    & > div:last-child {
+      height: 20px;
+      background-color: #406da2;
+      margin-top: 120px;
+      @media (max-width: 480px) {
+        margin-top: 60px;
+      }
+    }
+    h2 {
+      text-transform: uppercase;
+      color: white;
+      max-width: 1309px;
+      margin: 0 auto;
+    }
+    &__grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+      column-gap: 165px;
+      row-gap: 31px;
+      margin-top: 80px;
+      @media (max-width: 1536px) {
+        column-gap: 30px;
+      }
+      @media (max-width: 1024px) {
+        grid-template-columns: 1fr 1fr;
+      }
+      @media (max-width: 640px) {
+        grid-template-columns: 1fr;
+      }
+      @media (max-width: 480px) {
+        margin-top: 30px;
+        column-gap: 20px;
+        row-gap: 20px;
+      }
+      & > div {
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+        align-items: center;
+        text-align: center;
+        border-radius: 5px;
+        border-left: 5px solid #406da2;
+        background: #9eabbb;
+        box-shadow: 5px -5px 6px 0px rgba(95, 95, 95, 0.25);
+        border-bottom: 5px solid #406da2;
+        filter: blur(0.5px);
+        backdrop-filter: blur(5px);
+        padding: 18px 10px 51px 10px;
+        transition: 0.3s;
+        color: #c5ddf9;
+        @media (max-width: 480px) {
+          padding: 15px 10px 24px 10px;
+        }
+        span {
+          font-size: 24px;
+          line-height: 125%;
+          @media (max-width: 480px) {
+            font-size: 18px;
+          }
+        }
+        p {
+          font-size: 18px;
+          line-height: 105%;
+          display: none;
+          @media (max-width: 480px) {
+            font-size: 10px;
+          }
+        }
+        &:hover {
+          background: linear-gradient(
+              115deg,
+              #c5ddf9 -12.81%,
+              rgba(64, 109, 162, 0) 50.4%
+            ),
+            #406da2;
+          & > p {
+            display: block;
+          }
+        }
+        &:before {
+          font-size: 85px;
+          @media (max-width: 480px) {
+            font-size: 60px;
+          }
+        }
+      }
+    }
+  }
+}

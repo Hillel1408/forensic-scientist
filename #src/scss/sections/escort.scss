@@ -1,0 +1,49 @@
+.escort {
+  &-block-1 {
+    background-color: #c5ddf9;
+    padding: 80px 0 193px 0;
+    h2 {
+      color: #406da2;
+      margin-bottom: 50px;
+    }
+    p {
+      color: #373737;
+      font-size: 24px;
+      line-height: 125%;
+    }
+  }
+  &-block-2 {
+    padding: 70px 0 0 0;
+    background: linear-gradient(
+        90deg,
+        #9eabbb 0%,
+        rgba(158, 171, 187, 0.5) 100%
+      ),
+      lightgray -3.624px -127.045px / 100.157% 302.528% no-repeat;
+    h2 {
+      color: #406da2;
+      margin-bottom: 70px;
+    }
+    & > div:last-child {
+      height: 20px;
+      background-color: #406da2;
+      margin-top: 150px;
+    }
+    &__grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr 1fr;
+      gap: 60px;
+      p {
+        font-size: 24px;
+        line-height: 125%;
+        color: white;
+        border-radius: 5px;
+        border: 5px solid #406da2;
+        background: rgba(158, 171, 187, 0.8);
+        filter: blur(0.5px);
+        backdrop-filter: blur(5px);
+        padding: 34px 30px;
+      }
+    }
+  }
+}
