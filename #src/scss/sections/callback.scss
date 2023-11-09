@@ -5,6 +5,18 @@
   background-size: cover;
   display: flex;
   justify-content: center;
+  margin: -30px 0;
+  position: relative;
+  @media (max-width: 480px) {
+    display: block;
+    &:before {
+      content: url("../img/img-2.png");
+      left: 0;
+      position: absolute;
+      top: 180px;
+      z-index: 1;
+    }
+  }
   &__form {
     padding: 40px 236px 73px 236px;
     border-radius: 10px;
@@ -12,20 +24,46 @@
     margin-bottom: -100px;
     width: 975px;
     position: relative;
+    @media (max-width: 1536px) {
+      padding: 40px 36px 73px 36px;
+      width: 700px;
+    }
+    @media (max-width: 1024px) {
+      width: 600px;
+    }
+    @media (max-width: 768px) {
+      width: 100%;
+    }
+    @media (max-width: 480px) {
+      padding: 10px 20px;
+      width: 75%;
+      margin-left: auto;
+      margin-right: 20px;
+    }
     &::before {
       content: url("../img/bg-3.png");
       position: absolute;
       left: -495px;
       bottom: 99px;
+      @media (max-width: 1536px) {
+        left: -600px;
+      }
+      @media (max-width: 480px) {
+        display: none;
+      }
     }
     h2 {
       color: #373737;
       font-size: 32px;
-      line-height: 40px;
+      line-height: 138%;
       text-align: center;
       margin-bottom: 30px;
       span {
         font-weight: 700;
+      }
+      @media (max-width: 480px) {
+        font-size: 18px;
+        margin-bottom: 10px;
       }
     }
     p {
@@ -33,6 +71,12 @@
       font-size: 28px;
       line-height: 125%;
       text-align: center;
+      @media (max-width: 480px) {
+        font-size: 14px;
+        a {
+          display: block;
+        }
+      }
       a {
         color: #406da2;
         font-weight: 700;
@@ -43,6 +87,10 @@
       flex-direction: column;
       gap: 30px;
       padding-top: 30px;
+      @media (max-width: 480px) {
+        padding-top: 10px;
+        gap: 10px;
+      }
       input {
         border-radius: 5px;
         background: rgba(158, 171, 187, 0.3);
@@ -53,6 +101,13 @@
           color: #9eabbb;
           font-size: 28px;
           line-height: 125%;
+          @media (max-width: 480px) {
+            font-size: 14px;
+          }
+        }
+        @media (max-width: 480px) {
+          padding: 12px;
+          font-size: 14px;
         }
       }
       p {
@@ -60,6 +115,10 @@
         font-size: 16px;
         line-height: 100%;
         margin-top: -10px;
+        @media (max-width: 480px) {
+          margin-top: 0;
+          font-size: 12px;
+        }
       }
       button {
         font-size: 32px;
@@ -71,6 +130,12 @@
         background: #406da2;
         box-shadow: 4px 4px 4px 0px rgba(34, 63, 97, 0.36);
         margin-bottom: 30px;
+        @media (max-width: 480px) {
+          font-size: 16px;
+          padding: 12px;
+          margin-top: 15px;
+          margin-bottom: 5px;
+        }
       }
     }
     & > button {
@@ -86,6 +151,18 @@
       width: 100%;
       box-shadow: 4px 4px 4px 0px rgba(64, 109, 162, 0.24);
       margin-top: 29px;
+      @media (max-width: 1536px) {
+        padding-right: 0;
+        justify-content: center;
+      }
+      @media (max-width: 480px) {
+        margin-top: 5px;
+        font-size: 16px;
+        padding: 13px;
+        img {
+          width: 25px;
+        }
+      }
     }
   }
 }

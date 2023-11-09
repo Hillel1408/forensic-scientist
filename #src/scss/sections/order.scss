@@ -4,25 +4,54 @@
   background-image: url("../img/bg-1.jpg");
   background-position: center;
   background-size: cover;
+  @media (max-width: 480px) {
+    padding-top: 20px;
+    padding-bottom: 36px;
+  }
   & > div {
     display: grid;
     grid-template-columns: 1fr 567px;
+    gap: 20px;
+    @media (max-width: 1280px) {
+      grid-template-columns: 1fr;
+    }
   }
   &__content {
     max-width: 1048px;
     padding-top: 60px;
+    @media (max-width: 480px) {
+      padding-top: 0;
+    }
     h2 {
       font-size: 80px;
       font-weight: 700;
       line-height: 137.5%;
       color: white;
       margin-bottom: 23px;
+      @media (max-width: 1536px) {
+        font-size: 70px;
+      }
+      @media (max-width: 1280px) {
+        font-size: 60px;
+      }
+      @media (max-width: 1024px) {
+        font-size: 50px;
+      }
+      @media (max-width: 480px) {
+        font-size: 18px;
+        margin-bottom: 10px;
+        text-align: center;
+      }
     }
     p {
       font-size: 28px;
       font-weight: 700;
       line-height: 142.857%;
       color: white;
+      @media (max-width: 480px) {
+        font-size: 14px;
+        text-align: center;
+      }
     }
   }
   &__form {
@@ -30,10 +59,16 @@
     border-radius: 10px;
     background: rgba(255, 255, 255, 0.88);
     backdrop-filter: blur(2px);
+    @media (max-width: 480px) {
+      padding: 15px 20px 30px 20px;
+    }
     form {
       display: flex;
       flex-direction: column;
       gap: 50px;
+      @media (max-width: 480px) {
+        gap: 15px;
+      }
       label {
         margin-top: -25px;
         display: flex;
@@ -41,6 +76,11 @@
         font-size: 28px;
         color: #373737;
         line-height: 125%;
+        @media (max-width: 480px) {
+          font-size: 14px;
+          margin-top: 0;
+          max-width: 195px;
+        }
       }
       button {
         border-radius: 5px;
@@ -50,6 +90,10 @@
         font-weight: 700;
         line-height: 125%;
         color: white;
+        @media (max-width: 480px) {
+          font-size: 16px;
+          padding: 14px;
+        }
       }
       input {
         padding: 28px 20px;
@@ -58,10 +102,17 @@
         font-size: 28px;
         color: #373737;
         line-height: normal;
+        @media (max-width: 480px) {
+          padding: 16px 15px;
+          font-size: 14px;
+        }
         &::placeholder {
           font-size: 28px;
           color: #373737;
           line-height: normal;
+          @media (max-width: 480px) {
+            font-size: 14px;
+          }
         }
       }
     }
@@ -72,6 +123,10 @@
       line-height: 125%;
       text-align: center;
       margin-bottom: 50px;
+      @media (max-width: 480px) {
+        font-size: 20px;
+        margin-bottom: 10px;
+      }
     }
   }
 }
