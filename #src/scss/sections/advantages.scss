@@ -1,27 +1,58 @@
 .advantages {
   background-color: #9eabbb;
   padding: 100px 0;
+  @media (max-width: 480px) {
+    padding: 20px;
+  }
   & > div {
     display: grid;
     grid-template-columns: 1fr 1fr;
     row-gap: 68px;
     column-gap: 50px;
+    @media (max-width: 1024px) {
+      grid-template-columns: 1fr;
+    }
+    @media (max-width: 480px) {
+      row-gap: 30px;
+    }
     & > div {
       display: grid;
       grid-template-columns: 120px 1fr;
       gap: 45px;
+      @media (max-width: 768px) {
+        grid-template-columns: 1fr;
+        img {
+          margin: 0 auto;
+          width: 65px;
+        }
+      }
+      @media (max-width: 480px) {
+        gap: 20px;
+      }
       h3 {
         font-size: 28px;
         color: white;
         line-height: normal;
         text-transform: uppercase;
         margin-bottom: 11px;
+        @media (max-width: 768px) {
+          text-align: center;
+        }
+        @media (max-width: 480px) {
+          font-size: 16px;
+        }
       }
       p {
         font-size: 24px;
         line-height: 125%;
         color: white;
         max-width: 730px;
+        @media (max-width: 768px) {
+          text-align: center;
+        }
+        @media (max-width: 480px) {
+          font-size: 16px;
+        }
       }
     }
   }

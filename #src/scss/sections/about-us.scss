@@ -2,14 +2,24 @@
   background-color: #c5ddf9;
   padding-top: 60px;
   padding-bottom: 70px;
+  @media (max-width: 480px) {
+    padding-top: 30px;
+    padding-bottom: 30px;
+  }
   h2 {
     color: #406da2;
     margin-bottom: 26px;
+    @media (max-width: 480px) {
+      margin-bottom: 18px;
+    }
   }
   p {
     color: #373737;
     font-size: 24px;
     line-height: 125%;
+    @media (max-width: 480px) {
+      font-size: 16px;
+    }
     &:not(:last-child) {
       margin-bottom: 20px;
     }

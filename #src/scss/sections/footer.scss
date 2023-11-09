@@ -8,6 +8,10 @@
       justify-content: center;
       align-items: center;
       flex-direction: column;
+      @media (max-width: 480px) {
+        padding-bottom: 30;
+        padding-top: 159px;
+      }
       & > div {
         display: flex;
         gap: 10px;
@@ -22,12 +26,19 @@
         font-weight: 700;
         line-height: 125%;
         margin-bottom: 30px;
+        @media (max-width: 480px) {
+          margin-bottom: 20px;
+          font-size: 18px;
+        }
       }
       p,
       a {
         color: white;
         font-size: 28px;
         line-height: 125%;
+        @media (max-width: 480px) {
+          font-size: 16px;
+        }
       }
     }
     &:last-child {
