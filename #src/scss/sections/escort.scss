@@ -2,14 +2,24 @@
   &-block-1 {
     background-color: #c5ddf9;
     padding: 80px 0 193px 0;
+    @media (max-width: 480px) {
+      padding: 30px 0 170px 0;
+    }
     h2 {
       color: #406da2;
       margin-bottom: 50px;
+      @media (max-width: 480px) {
+        margin-bottom: 10px;
+      }
     }
     p {
       color: #373737;
       font-size: 24px;
       line-height: 125%;
+      @media (max-width: 480px) {
+        text-align: center;
+        font-size: 14px;
+      }
     }
   }
   &-block-2 {
@@ -20,19 +30,43 @@
         rgba(158, 171, 187, 0.5) 100%
       ),
       lightgray -3.624px -127.045px / 100.157% 302.528% no-repeat;
+    @media (max-width: 480px) {
+      padding: 23px 0 0 0;
+    }
     h2 {
       color: #406da2;
       margin-bottom: 70px;
+      @media (max-width: 480px) {
+        margin-bottom: 30px;
+      }
     }
     & > div:last-child {
       height: 20px;
       background-color: #406da2;
       margin-top: 150px;
+      @media (max-width: 480px) {
+        margin-top: 60px;
+      }
     }
     &__grid {
       display: grid;
       grid-template-columns: 1fr 1fr 1fr 1fr;
       gap: 60px;
+      @media (max-width: 1536px) {
+        grid-template-columns: 1fr 1fr 1fr;
+        gap: 40px;
+      }
+      @media (max-width: 1024px) {
+        grid-template-columns: 1fr 1fr;
+        gap: 20px;
+      }
+      @media (max-width: 640px) {
+        grid-template-columns: 1fr;
+        gap: 20px;
+      }
+      @media (max-width: 480px) {
+        gap: 50px;
+      }
       p {
         font-size: 24px;
         line-height: 125%;
@@ -43,6 +77,10 @@
         filter: blur(0.5px);
         backdrop-filter: blur(5px);
         padding: 34px 30px;
+        @media (max-width: 480px) {
+          padding: 10px;
+          font-size: 14px;
+        }
       }
     }
   }
