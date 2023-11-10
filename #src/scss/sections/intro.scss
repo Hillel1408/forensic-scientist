@@ -187,6 +187,9 @@
           background-size: cover;
           padding-top: 30px;
           background-position: center;
+          & > div {
+            max-height: 1000px;
+          }
         }
       }
       &.swiper-slide-thumb-active {
