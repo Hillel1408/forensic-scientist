@@ -196,7 +196,7 @@
       </div>
       <div class="intro__swiper-thumbs">
         <ul class="intro__list swiper-wrapper">
-          <li class="swiper-slide">
+          <li class="swiper-slide active">
             <span>СОПРОВОЖДЕНИЕ ПРИ ПРОВЕРКАХ</span>
             <div>
               <div>
@@ -586,10 +586,8 @@
         item.addEventListener("click", function () {
           introListItems.forEach((item) => {
             if (item == this) {
-              this.childNodes[3].style.maxHeight = "500px";
               this.classList.add("active");
             } else {
-              item.childNodes[3].style.maxHeight = "0";
               item.classList.remove("active");
             }
           });

@@ -2242,6 +2242,9 @@ h6 {
     padding-top: 30px;
     background-position: center;
   }
+  .intro__list > li.active > div {
+    max-height: 1000px;
+  }
 }
 .intro__list > li.swiper-slide-thumb-active > span {
   background-color: #c5ddf9;
