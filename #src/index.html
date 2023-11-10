@@ -9,7 +9,7 @@
     <link rel="shortcut icon" href="favicon.ico" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   </head>
-  <body>
+  <body onclick>
     @@include('./html/header.html')
     <main>
       @@include('./html/intro.html') @@include('./html/about-us.html')
@@ -21,6 +21,36 @@
     <script src="js/swiper-bundle.min.js"></script>
     <script src="js/script.js"></script>
     <script>
+      const introSwiperThumbs = new Swiper(".intro__swiper-thumbs", {
+        enabled: false,
+        breakpoints: {
+          1240: {
+            enabled: true,
+          },
+        },
+      });
+      const introSwiper = new Swiper(".intro__swiper", {
+        direction: "horizontal",
+        slidesPerView: "auto",
+        navigation: {
+          nextEl: ".intro__swiper-button-next",
+          prevEl: ".intro__swiper-button-prev",
+        },
+        pagination: {
+          el: ".intro__swiper-pagination",
+          clickable: true,
+        },
+        thumbs: {
+          swiper: introSwiperThumbs,
+        },
+        enabled: false,
+        breakpoints: {
+          1240: {
+            enabled: true,
+          },
+        },
+      });
+
       const introListItems = document.querySelectorAll(".intro__list > li");
 
       introListItems.forEach((item) => {
