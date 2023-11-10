@@ -20,5 +20,22 @@
     @@include('./html/footer.html')
     <script src="js/swiper-bundle.min.js"></script>
     <script src="js/script.js"></script>
+    <script>
+      const introListItems = document.querySelectorAll(".intro__list > li");
+
+      introListItems.forEach((item) => {
+        item.addEventListener("click", function () {
+          introListItems.forEach((item) => {
+            if (item == this) {
+              this.childNodes[3].style.maxHeight = "500px";
+              this.classList.add("active");
+            } else {
+              item.childNodes[3].style.maxHeight = "0";
+              item.classList.remove("active");
+            }
+          });
+        });
+      });
+    </script>
   </body>
 </html>

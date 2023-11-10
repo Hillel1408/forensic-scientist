@@ -43,10 +43,14 @@
         gap: 17px;
         &:before {
           content: url("../img/icon-16.svg");
+          @media (max-width: 480px) {
+            transform: scale(0.5);
+          }
         }
         @media (max-width: 480px) {
           font-size: 14px;
           color: white;
+          gap: 5px;
         }
       }
     }

@@ -24,12 +24,8 @@
   }
   &-block-2 {
     padding: 70px 0 0 0;
-    background: linear-gradient(
-        90deg,
-        #9eabbb 0%,
-        rgba(158, 171, 187, 0.5) 100%
-      ),
-      lightgray -3.624px -127.045px / 100.157% 302.528% no-repeat;
+    background: url("../img/bg-13.webp");
+    background-position: center top;
     @media (max-width: 480px) {
       padding: 23px 0 0 0;
       background: url("../img/bg-9.jpg");

@@ -30,6 +30,7 @@
   &__mobile-menu {
     display: none;
     position: relative;
+    z-index: 10;
     button {
       background: transparent;
     }
